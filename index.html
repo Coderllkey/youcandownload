@@ -7,8 +7,8 @@
     <title>Option</title>
     <style>
         .img{
-            width: 500px;
-            height: 300px;
+            width: 50%;
+            height: 30%;
         }
         select{
             /* display: block; */
@@ -48,11 +48,21 @@
             height: 30px;
             border-radius: 10px;
             transition: 0.4s;
+            display: block;
+            margin: 10px auto;
+
         }
         .download:hover{
             background-color: black;
             color: aliceblue;
         }
+        .video , .photo{
+            width: 500px;
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -83,6 +93,14 @@
 
     <a class="download inline" href="whitebeard.jpg" target="_blank" download="pic.jpg">Download the Picture</a>
 
+    <div class="video">
+        <video width="320" height="240" controls>
+            <source src="song.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        <a class="download inline" href="song.mp4" target="_blank" download>Download the video </a>
+    
+    </div>
   
 </body>
 </html>
