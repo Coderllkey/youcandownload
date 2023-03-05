@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option</title>
+    <style>
+        .img{
+            width: 500px;
+            height: 300px;
+        }
+        select{
+            /* display: block; */
+            width: 100px;
+            height: 30px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            /* text-align: center; */
+            box-sizing: border-box;
+        }
+        optgroup{
+            font-size: 18px;
+            color: red;
+        }
+        option{
+            font-size: 16px;
+            color: rgb(119, 49, 49);
+        }
+        .inline{
+            display: inline-block;
+            padding: 0px 10px;
+        }
+        .nav{
+            background-color: rgba(231, 32, 20, 0.1);
+        }
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            color: black;
+        }
+        .download{
+            border: 1px solid black;
+            width: 200px;
+            text-align: center;
+            line-height: 25px;
+            height: 30px;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+        .download:hover{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+   <div class="nav">
+    <h2 class="inline">Home</h2>
+    <a class="inline" href="#">About</a>
+    <a class="inline" href="#">Contact</a>
+    <select name="" id="">
+        <optgroup label="numbers">
+            <option value="">one</option>
+        <option value="">two</option>
+        <option value="">three</option>
+        <option value="">four</option>
+        <option value="">five</option>
+        </optgroup>
+        <optgroup label="cars">
+            <option value="">Marcedes</option>
+            <option value="">toyota</option>
+            <option value="">Benx</option>
+        </optgroup>
+        
+
+     </select>
+   </div>
+   <div class="photo">
+    <img class="img" src="whitebeard.jpg" alt="whitebeard">
+</div>
+
+    <a class="download inline" href="whitebeard.jpg" target="_blank" download="pic.jpg">Download the Picture</a>
+
+  
+</body>
+</html>
